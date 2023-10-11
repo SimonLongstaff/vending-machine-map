@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96357982-8878-4486-bd51-22b105f52f0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/vending-machine-bin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vending-machine.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AddProductModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ImageDisplay.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MapButtons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MapContainer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBarBurgerMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/vending-icon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/AddVending/addVendingSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/hasLoadedVendingMachines/hasLoadedVendingMachineSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/spinner/spinner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/spinner/spinnerSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DummyData.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddVendingModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/AddVending/AddVendingModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VendingMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VendingMap.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/drink-search/drink-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/drink-search/drink-search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/drink-search/drink-searchAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/drink-search/drink-searchAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/vending-display/vending-display-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-display/vending-display-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/vending-display/vendingDisplayAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-display/vendingDisplayAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/vending-icons/vending-icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-icons/vending-icons.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/vending-icons/vendingAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-icons/vendingAPI.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +156,7 @@
       <workItem from="1696940455488" duration="126000" />
       <workItem from="1696942410445" duration="1093000" />
       <workItem from="1696996964937" duration="7274000" />
-      <workItem from="1697023642014" duration="823000" />
+      <workItem from="1697023642014" duration="1117000" />
     </task>
     <servers />
   </component>
