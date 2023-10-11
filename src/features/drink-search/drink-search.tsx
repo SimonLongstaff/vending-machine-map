@@ -1,11 +1,35 @@
 import styled from "styled-components"
-import { useState } from "react"
+import React, { useState } from "react"
 import { searchProducts } from "./drink-searchAPI"
 import { DrinkType } from "../../Types"
+import {
+  selectAddingVendingMachine,
+  setAddingVendingMachine,
+} from "../AddVending/addVendingSlice"
+import { useAppDispatch, useAppSelector } from "../../app/hooks"
+import BurgerMenu from "../../components/NavBarBurgerMenu"
+import ProductCard from "../../components/ProductCard"
 
 export default function DrinkSearch() {
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResults] = useState([])
+  const dispatch = useAppDispatch()
+  const addingVendingMachine = useAppSelector(selectAddingVendingMachine)
+
+  if (addingVendingMachine)
+    return (
+      <>
+        <SearchContainer>
+          <HeaderButton
+            onClick={() => {
+              dispatch(setAddingVendingMachine(false))
+            }}
+          >
+            Finished Adding
+          </HeaderButton>
+        </SearchContainer>
+      </>
+    )
 
   return (
     <>
@@ -21,15 +45,8 @@ export default function DrinkSearch() {
             })
           }}
         />
-        <ClearButton
-          onClick={() => {
-            setSearchTerm("")
-            setSearchResults([])
-          }}
-        >
-          Clear
-        </ClearButton>
       </SearchContainer>
+      <BurgerMenu />
       {GetSearchResults(searchTerm, searchResults)}
     </>
   )
@@ -43,9 +60,7 @@ function GetSearchResults(searchterm: string, searchResults: DrinkType[]) {
       <SearchResults>
         <SearchResultsList>
           {searchResults.map((drink) => (
-            <SearchResultsCard key={drink.id}>
-              {drink.name} - {drink.description} - {drink.price}
-            </SearchResultsCard>
+            <ProductCard key={drink.id} {...drink} />
           ))}
         </SearchResultsList>
       </SearchResults>
@@ -53,9 +68,8 @@ function GetSearchResults(searchterm: string, searchResults: DrinkType[]) {
 }
 
 const SearchContainer = styled.div`
-  width: 100vw;
   padding: 10px;
-  background: #b4b4b4;
+  background: #177a72;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,43 +77,18 @@ const SearchContainer = styled.div`
 
 const SearchField = styled.input`
   width: 50vw;
-  height: 90%;
   border-radius: 5px;
   border: none;
   padding: 10px;
   font-size: 20px;
-  margin-bottom: 10px;
-`
-const ClearButton = styled.button`
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: #ff0000;
-  color: white;
-  height: 40px;
-
-  &:hover {
-    background: white;
-    color: #ff0000;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:active {
-    transform: scale(0.9);
-  }
+  text-align: center;
 `
 
 const SearchResults = styled.div`
   position: absolute;
-  top: 70px;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -107,27 +96,25 @@ const SearchResults = styled.div`
   z-index: 9990;
 `
 
-const SearchResultsList = styled.ul`
-  width: 50vw;
-  height: 50vh;
-  background: white;
+const SearchResultsList = styled.div`
+  height: 90vh;
   border-radius: 5px;
-  padding: 10px;
+  margin: 10px;
   overflow-y: scroll;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `
 
-const SearchResultsCard = styled.li`
-  width: 100%;
-  height: 100px;
-  background: #b4b4b4;
+const HeaderButton = styled.button`
+  border: none;
+  background: #8d3131;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 10px;
+
+  &:hover {
+    background: #fff;
+    color: #8d3131;
+  }
 `

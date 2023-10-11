@@ -6,6 +6,8 @@ import {
 } from "./vending-display-Slice"
 import { DrinkType, VendingMachineType } from "../../Types"
 import styled from "styled-components"
+import ProductCard from "../../components/ProductCard"
+import ImageDisplay from "../../components/ImageDisplay"
 
 export default function VendingDisplayModal() {
   const dispatch = useAppDispatch()
@@ -28,16 +30,11 @@ export default function VendingDisplayModal() {
           <h1>{selectedVending.name}</h1>
           <CloseButton onClick={onClick}>X</CloseButton>
         </ModalHeader>
+        <ImageDisplay id={selectedVending.id} />
         <h3>Products</h3>
         <ProductList>
           {vendingItems.map((item) => (
-            <ProductCard key={item.id}>
-              <ProductCardHeader>
-                {" "}
-                {item.name} - ¥{item.price}
-              </ProductCardHeader>
-              <p>{item.description}</p>
-            </ProductCard>
+            <ProductCard key={item.id} {...item} />
           ))}
         </ProductList>
       </Modal>
@@ -51,7 +48,7 @@ const ModalBackground = styled.div`
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-color: rgb(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -61,7 +58,7 @@ const ModalBackground = styled.div`
 const Modal = styled.div`
   background-color: white;
   width: 50vw;
-  height: 50vh;
+  height: 70vh;
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -87,13 +84,7 @@ const ProductList = styled.div`
   justify-content: space-between;
   margin: 10px;
   max-height: 80vh;
-`
-
-const ProductCard = styled.div`
-  background: #b4b4b4;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
+  overflow-y: scroll;
 `
 
 const ProductCardHeader = styled.h4`

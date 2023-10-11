@@ -1,7 +1,7 @@
-const api = "http://192.168.0.19:8000/"
+const api = "https://vending.yrin.duckdns.org/"
 
 export async function fetchDrinks() {
-  return fetch(api + "drinks")
+  return fetch(api + "products")
     .then((response) => response.json())
     .then((data) => {
       return data

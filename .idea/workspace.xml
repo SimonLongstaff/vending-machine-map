@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96357982-8878-4486-bd51-22b105f52f0b" name="Changes" comment="" />
+    <list default="true" id="96357982-8878-4486-bd51-22b105f52f0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/vending-machine-bin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vending-machine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddProductModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ImageDisplay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MapButtons.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MapContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavBarBurgerMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/vending-icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/AddVending/addVendingSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/hasLoadedVendingMachines/hasLoadedVendingMachineSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/spinner/spinner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/spinner/spinnerSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DummyData.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddVendingModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/AddVending/AddVendingModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VendingMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VendingMap.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/drink-search/drink-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/drink-search/drink-search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/drink-search/drink-searchAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/drink-search/drink-searchAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/vending-display/vending-display-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-display/vending-display-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/vending-display/vendingDisplayAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-display/vendingDisplayAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/vending-icons/vending-icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-icons/vending-icons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/vending-icons/vendingAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/vending-icons/vendingAPI.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,41 +69,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/simon/Documents/Software/vending-machine-map/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "/home/simon/Documents/Software/vending-machine-map/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/simon/Documents/GitHub/audiobookshelf-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/simon/Documents/Software/vending-machine-map/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/features/AddVending" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.preview -host">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
       </scripts>
+      <arguments value="--host" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
@@ -88,10 +134,28 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="preview" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="preview" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="npm.preview -host" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="npm.dev (1)" />
+      <item itemvalue="npm.preview" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev (1)" />
+        <item itemvalue="npm.preview" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,10 +167,38 @@
       <updated>1692540797519</updated>
       <workItem from="1692540798520" duration="848000" />
       <workItem from="1692600423101" duration="36777000" />
+      <workItem from="1692852706928" duration="4337000" />
+      <workItem from="1692971629086" duration="17000" />
+      <workItem from="1693127727509" duration="113000" />
+      <workItem from="1694651348360" duration="617000" />
+      <workItem from="1694954988619" duration="1473000" />
+      <workItem from="1695724886255" duration="605000" />
+      <workItem from="1695886441376" duration="1342000" />
+      <workItem from="1696224314110" duration="57000" />
+      <workItem from="1696224381502" duration="1410000" />
+      <workItem from="1696228151712" duration="4267000" />
+      <workItem from="1696291134972" duration="7296000" />
+      <workItem from="1696299051489" duration="11284000" />
+      <workItem from="1696397210931" duration="6072000" />
+      <workItem from="1696416768596" duration="1946000" />
+      <workItem from="1696940455488" duration="126000" />
+      <workItem from="1696942410445" duration="1093000" />
+      <workItem from="1696996964937" duration="7274000" />
+      <workItem from="1697023642014" duration="823000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/vending-icon.tsx</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

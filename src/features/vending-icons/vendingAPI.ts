@@ -1,7 +1,7 @@
 import { VendingMachineDTO, VendingMachineType } from "../../Types"
 import { LatLngBounds } from "leaflet"
 
-const api = "http://192.168.0.19:8000/"
+const api = "https://vending.yrin.duckdns.org/"
 
 export async function fetchVendingMachines(): Promise<VendingMachineType[]> {
   return fetch(api + "vending_machines")
@@ -54,7 +54,7 @@ export async function addVendingMachine(vendingMachine: VendingMachineDTO) {
 }
 
 export async function fetchProducts(id: string) {
-  return fetch(api + "vending_machines/" + id + "/products")
+  return fetch(api + "products/vending_machine/" + id)
     .then((response) => response.json())
     .then((data) => {
       console.log(data)
